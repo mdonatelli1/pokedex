@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 import PokemonCard from './components/PokemonCard'
@@ -38,7 +36,7 @@ function App() {
   return (
     <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <NavBar pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} pokemonListLength={pokemonList.length}/>
+      <NavBar setPokemonIndex={setPokemonIndex} pokemonList={pokemonList}/>
     </div>
   )
 }
